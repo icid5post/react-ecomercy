@@ -1,6 +1,7 @@
-import React from 'react';
-
 import './menu-item.styles.scss';
+
+import React from 'react';
+import { withRouter } from 'react-router-dom';
 
 const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
     <div
@@ -20,4 +21,4 @@ const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
     </div>
 );
 
-export default MenuItem;
+export default withRouter(MenuItem);
